@@ -1,0 +1,11 @@
+let userNumber;
+
+do {
+  userNumber = prompt("Введите число больше 100:", "");
+} while (userNumber !== null && (isNaN(userNumber) || +userNumber <= 100));
+
+if (userNumber !== null) {
+  alert("Вы ввели число больше 100. Спасибо!");
+} else {
+  alert("Отменено.");
+}
